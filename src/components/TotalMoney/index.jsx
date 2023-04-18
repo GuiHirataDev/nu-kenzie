@@ -1,11 +1,14 @@
-import { useState, useEffect } from "react";
 import { TotalMoneyStyled } from "./styles";
 
 export const TotalMoney = ({ listTransactions }) => {
-  const values = []
+  const values = [];
 
   listTransactions.map((elem) => {
-    values.push(elem.value);
+    if(elem.type === "Entrada"){
+      values.push(elem.value * 1);
+    } else {
+      values.push(elem.value * -1);
+    }
   });
 
   const initialValue = 0;

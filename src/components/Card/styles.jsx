@@ -9,7 +9,7 @@ export const CardStyled = styled.div`
     justify-content: space-around;
 
     border-radius: 10px;
-    background-color: #e6e8e9d6;
+    background: linear-gradient(90deg, ${props => props.type === "Entrada" ? "#03B898" : "#bababbd5"} 8px, #e6e8e9d6 8px);
 
     .card__title {
         margin: 15px;
@@ -27,8 +27,8 @@ export const CardStyled = styled.div`
     }
 
     button {
-        width: 60px;
-        height: 25px;
+        width: 30px;
+        height: 30px;
         margin-left: 15px;
 
         border: none;

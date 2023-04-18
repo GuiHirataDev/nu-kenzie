@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TotalMoneyStyled = styled.section`
+export const TotalMoneyStyled = styled.div`
     width: 95%;
     height: 96px;
     margin: 20px auto;
@@ -30,6 +30,16 @@ export const TotalMoneyStyled = styled.section`
 
     span {
         margin: 0px 20px;
+    }
+
+    @media (min-width: 750px) {
+        width: 355px;
+        margin: 20px 10px 0px 10px;
+    }
+
+    @media (min-width: 1350px) {
+        width: 500px;
+        margin: 20px 10px 0px 100px;
     }
     
 `

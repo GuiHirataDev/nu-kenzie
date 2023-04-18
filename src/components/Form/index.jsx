@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { FormStyled } from "./styles";
 
-export const Form = ({setListTransactions, listTransactions}) => {
+export const Form = ({setListTransactions}) => {
   const {
     register,
     handleSubmit,
@@ -19,6 +19,7 @@ export const Form = ({setListTransactions, listTransactions}) => {
         id="description"
         placeholder="Digite aqui sua descrição"
         {...register("description")}
+        required
       />
       <span>Ex: Compra de roupas</span>
       <label htmlFor="value">Valor (R$)</label>
@@ -27,9 +28,10 @@ export const Form = ({setListTransactions, listTransactions}) => {
         id="value"
         placeholder="Insira um valor"
         {...register("value")}
+        required
       />
       <label htmlFor="type">Tipo de valor</label>
-      <select name="" id="type" {...register("type")}>
+      <select name="" id="type" {...register("type")} required>
         <option value="Entrada">Entrada</option>
         <option value="Saída">Saída</option>
       </select>

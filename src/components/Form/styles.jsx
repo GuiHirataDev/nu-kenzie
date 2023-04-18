@@ -62,4 +62,14 @@ export const FormStyled = styled.form`
         text-align: center;
         color: #FFF;
     }
+
+    @media (min-width: 750px) {
+        width: 355px;
+        margin: 0px 10px 0px 10px;
+    }
+
+    @media (min-width: 1350px) {
+        width: 500px;
+        margin: 20px 10px 0px 100px;
+    }
 `

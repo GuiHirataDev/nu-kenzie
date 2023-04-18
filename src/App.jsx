@@ -1,22 +1,25 @@
-import { useState } from 'react'
-import { Header } from './components/Header'
-import { Form } from './components/Form'
-import './App.css'
-import { TotalMoney } from './components/TotalMoney'
-import { List } from './components/List'
+import { useState } from "react";
+import { Header } from "./components/Header";
+import { Form } from "./components/Form";
+import "./App.css";
+import { TotalMoney } from "./components/TotalMoney";
+import { List } from "./components/List";
 
 function App() {
-
-  const [listTransactions, setListTransactions] = useState([])
+  const [listTransactions, setListTransactions] = useState([]);
 
   return (
     <>
       <Header />
-      <Form setListTransactions={setListTransactions} listTransactions={listTransactions}/>
-      <TotalMoney listTransactions={listTransactions}/>
-      <List listTransactions={listTransactions}/>
+      <main>
+        <section>
+          <Form setListTransactions={setListTransactions}/>
+          <TotalMoney listTransactions={listTransactions} />
+        </section>
+        <List listTransactions={listTransactions} />
+      </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

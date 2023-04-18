@@ -1,17 +1,20 @@
 import { CardStyled } from "./styles";
+import { FaTrash } from "react-icons/fa";
 
 export const Card = ({ transaction }) => {
   return (
-    <CardStyled>
+    <CardStyled type={transaction.type}>
       <h2 className="card__title">{transaction.description}</h2>
       <span>{transaction.type}</span>
       <p>
-        {transaction.value.toLocaleString("pt-br", {
+        {(transaction.value * 1).toLocaleString("pt-br", {
           style: "currency",
           currency: "BRL",
         })}
       </p>
-      <button>Excluir</button>
+      <button>
+        <FaTrash />
+      </button>
     </CardStyled>
   );
 };
