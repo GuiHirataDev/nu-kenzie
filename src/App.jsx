@@ -2,6 +2,8 @@ import { useState } from 'react'
 import { Header } from './components/Header'
 import { Form } from './components/Form'
 import './App.css'
+import { TotalMoney } from './components/TotalMoney'
+import { List } from './components/List'
 
 function App() {
 
@@ -10,7 +12,9 @@ function App() {
   return (
     <>
       <Header />
-      <Form />
+      <Form setListTransactions={setListTransactions} listTransactions={listTransactions}/>
+      <TotalMoney listTransactions={listTransactions}/>
+      <List listTransactions={listTransactions}/>
     </>
   )
 }
