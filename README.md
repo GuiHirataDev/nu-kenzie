@@ -12,7 +12,7 @@ Para iniciar este projeto utilize o comando " yarn install " para instalar as de
 
 Verifique se já possui esse gerenciador com o comando " yarn --version "
 
-Caso não possua o yarn instalado, rode o comando " npm install --global yarn" para fazer a instalação.
+Caso não possua o yarn instalado, rode o comando " npm install --global yarn " para fazer a instalação.
 
 ## Rodando a aplicação
 
