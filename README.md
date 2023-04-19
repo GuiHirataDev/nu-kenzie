@@ -6,7 +6,7 @@
  
 ## Link do deploy
  
-<a href="https://nu-kenzie-teal-nine.vercel.app/" target="_blank">Linkedin</a>
+<a href="https://nu-kenzie-teal-nine.vercel.app/" target="_blank">Deploy</a>
 
 ## Iniciando o Projeto
 
