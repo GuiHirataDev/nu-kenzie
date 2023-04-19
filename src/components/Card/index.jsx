@@ -1,13 +1,11 @@
+import { useContext } from "react";
 import { CardStyled } from "./styles";
 import { FaTrash } from "react-icons/fa";
+import { MainContext } from "../../contexts/MainContext";
 
-export const Card = ({ transaction, setListTransactions, listTransactions }) => {
+export const Card = ({ transaction }) => {
 
-  const handleList = (item) => {
-    const filteredList = listTransactions.filter((elem) => (elem !== item))
-
-    setListTransactions(filteredList)
-  }
+  const { handleList } = useContext(MainContext)
 
   return (
     <CardStyled type={transaction.type}>

@@ -1,15 +1,11 @@
 import { useForm } from "react-hook-form";
 import { FormStyled } from "./styles";
+import { useContext } from "react";
+import { MainContext } from "../../contexts/MainContext";
 
-export const Form = ({setListTransactions}) => {
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => {
-    setListTransactions(dataPrev => [...dataPrev, data])
-  };
+export const Form = () => {
+
+  const { register, handleSubmit, onSubmit } = useContext(MainContext)
 
   return (
     <FormStyled onSubmit={handleSubmit(onSubmit)}>

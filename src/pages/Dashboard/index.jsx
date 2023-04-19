@@ -1,22 +1,24 @@
-import { useState } from "react";
+import { useContext } from "react";
 import { Header } from "../../components/Header";
 import { Form } from "../../components/Form";
 import { TotalMoney } from "../../components/TotalMoney";
 import { List } from "../../components/List";
 import { Main } from "./styles";
+import { MainContext } from "../../contexts/MainContext";
 
 export const Dashboard = () => {
-  const [listTransactions, setListTransactions] = useState([]);
+  
+  const { listTransactions, setListTransactions } = useContext(MainContext)
 
   return (
     <>
       <Header />
       <Main>
         <section>
-          <Form setListTransactions={setListTransactions}/>
-          <TotalMoney listTransactions={listTransactions} />
+          <Form/>
+          <TotalMoney/>
         </section>
-        <List listTransactions={listTransactions} setListTransactions={setListTransactions}/>
+        <List/>
       </Main>
     </>
   );

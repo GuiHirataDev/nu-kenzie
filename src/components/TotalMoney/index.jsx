@@ -1,6 +1,11 @@
+import { useContext } from "react";
 import { TotalMoneyStyled } from "./styles";
+import { MainContext } from "../../contexts/MainContext";
 
-export const TotalMoney = ({ listTransactions }) => {
+export const TotalMoney = () => {
+
+  const { listTransactions } = useContext(MainContext)
+
   const values = [];
 
   listTransactions.map((elem) => {
