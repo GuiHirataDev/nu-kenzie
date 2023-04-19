@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const CardStyled = styled.div`
     width: 95%;
-    height: 156px;
+    height: 165px;
     margin: 10px auto;
     display: flex;
     flex-direction: column;
@@ -23,13 +23,13 @@ export const CardStyled = styled.div`
     }
 
     p {
-        margin-left: 15px;
+        margin: 10px 0px 10px 15px;
     }
 
     button {
         width: 30px;
         height: 30px;
-        margin-left: 15px;
+        margin: 0px 0px 10px 15px;
 
         border: none;
         border-radius: 5px;

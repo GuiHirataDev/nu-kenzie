@@ -70,6 +70,15 @@ export const FormStyled = styled.form`
 
     @media (min-width: 1350px) {
         width: 500px;
+        height: 500px;
         margin: 20px 10px 0px 100px;
+
+        label {
+            font-size: 20px;
+        }
+
+        button {
+            margin-top: 40px;
+        }
     }
 `

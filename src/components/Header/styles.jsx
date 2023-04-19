@@ -18,4 +18,13 @@ export const HeaderStyled = styled.header`
     span {
         color: #FD377E;
     }
+
+    @media (min-width: 1350px) {
+        height: 100px;
+
+        h1 {
+            font-size: 40px;
+            margin-left: 100px;
+        }
+    }
 `
