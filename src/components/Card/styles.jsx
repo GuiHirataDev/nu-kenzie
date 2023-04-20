@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CardStyled = styled.div`
+export const CardStyled = styled.li`
     width: 95%;
     height: 165px;
     margin: 10px auto;
