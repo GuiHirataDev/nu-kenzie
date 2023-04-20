@@ -9,7 +9,7 @@ export const CardStyled = styled.div`
     justify-content: space-around;
 
     border-radius: 10px;
-    background: linear-gradient(90deg, ${props => props.type === "Entrada" ? "#03B898" : "#bababbd5"} 8px, #e6e8e9d6 8px);
+    background: linear-gradient(90deg, ${props => props.type === "Entrada" ? "var(--color-green)" : "var(--color-gray-1)"} 8px, var(--color-gray-0) 8px);
 
     .card__title {
         margin: 15px;
@@ -33,7 +33,7 @@ export const CardStyled = styled.div`
 
         border: none;
         border-radius: 5px;
-        background-color: #bababbd5;
+        background-color: var(--color-gray-1);
         cursor: pointer;
     }
 `

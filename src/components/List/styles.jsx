@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const ListStyled = styled.div`
-  font-family: Arial, Helvetica, sans-serif;
   width: 100%;
 
   .title {

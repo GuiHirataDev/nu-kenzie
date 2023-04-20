@@ -10,13 +10,12 @@ export const HeaderStyled = styled.header`
 
     h1 {
         font-size: 30px;
-        font-family: Arial, Helvetica, sans-serif;
         font-weight: 700;
         margin: auto 20px;
     }
 
     span {
-        color: #FD377E;
+        color: var(--color-pink);
     }
 
     @media (min-width: 1350px) {

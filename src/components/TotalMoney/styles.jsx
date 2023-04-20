@@ -17,15 +17,13 @@ export const TotalMoneyStyled = styled.div`
 
     div h2 {
         font-size: 18px;
-        font-family: Arial, Helvetica, sans-serif;
         font-weight: 600;
     }
 
     div p {
         font-size: 18px;
-        font-family: Arial, Helvetica, sans-serif;
         font-weight: 600;
-        color: #FD377E;
+        color: var(--color-pink);
     }
 
     span {

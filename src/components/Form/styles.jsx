@@ -19,7 +19,7 @@ export const FormStyled = styled.form`
 
         border: none;
         border-radius: 10px;
-        background-color: #e6e8e9d6;
+        background-color: var(--color-gray-0);
         outline: none;
 
         font-size: 18px;
@@ -31,7 +31,7 @@ export const FormStyled = styled.form`
         margin: 10px 0px 0px 20px;
 
         font-size: 14px;
-        color: #868E96;
+        color: var(--color-gray-2);
     }
 
     select {
@@ -41,7 +41,7 @@ export const FormStyled = styled.form`
 
         border: none;
         border-radius: 10px;
-        background-color: #e6e8e9d6;
+        background-color: var(--color-gray-0);
         outline: none;
 
         font-size: 18px;
@@ -55,7 +55,7 @@ export const FormStyled = styled.form`
 
         border: none;
         border-radius: 10px;
-        background-color: #FD377E;
+        background-color: var(--color-pink);
         cursor: pointer;
 
         font-size: 18px;

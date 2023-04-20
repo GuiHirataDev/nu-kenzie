@@ -8,7 +8,6 @@ export const Main = styled.main`
   align-items: center;
 
   background-color: #2a2831;
-  font-family: Arial, Helvetica, sans-serif;
 
   .div__text {
     height: 80%;
@@ -18,13 +17,13 @@ export const Main = styled.main`
     margin-left: 20px;
 
     span {
-      color: #fd377e;
+      color: var(--color-pink);
     }
 
     h1 {
       font-size: 30px;
       font-weight: 600;
-      color: #fff;
+      color: var(--color-white-fixed);
     }
 
     h2 {
@@ -32,12 +31,12 @@ export const Main = styled.main`
       font-size: 35px;
       font-weight: 600;
       letter-spacing: 1px;
-      color: #fff;
+      color: var(--color-white-fixed);
     }
 
     p {
       font-size: 18px;
-      color: #fff;
+      color: var(--color-white-fixed);
     }
 
     button {
@@ -46,12 +45,12 @@ export const Main = styled.main`
 
       border: none;
       border-radius: 10px;
-      background-color: #fd377e;
+      background-color: var(--color-pink);
       cursor: pointer;
 
       font-size: 18px;
       text-align: center;
-      color: #fff;
+      color: var(--color-white-fixed);
     }
   }
 
