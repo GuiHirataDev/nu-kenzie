@@ -1,4 +1,3 @@
-import { useForm } from "react-hook-form";
 import { FormStyled } from "./styles";
 import { useContext } from "react";
 import { MainContext } from "../../contexts/MainContext";

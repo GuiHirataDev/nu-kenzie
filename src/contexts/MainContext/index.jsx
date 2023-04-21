@@ -10,9 +10,12 @@ export const MainProvider = ({ children }) => {
     register,
     handleSubmit,
     formState: { errors },
+    reset
   } = useForm();
   const onSubmit = (data) => {
     setListTransactions((dataPrev) => [...dataPrev, data]);
+
+    reset();
   };
 
   const handleList = (item) => {
